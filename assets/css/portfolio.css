@@ -1,0 +1,156 @@
+#name
+{
+    font-size: 80px;
+    font-family: 'Pangolin', cursive;
+    font-weight: bolder;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.navBtn
+{
+    font-size: 30px;
+    font-family: 'Pangolin', cursive;
+    font-weight: bolder;
+    color: white;
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 0 25px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#navBtnsContainer
+{
+    text-align: center;
+}
+
+.navBtn:hover
+{
+    color: tan;
+    text-decoration: none;
+}
+
+#navItems
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.container-fluid
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+
+#landing
+{
+    background: url('../images/newheader.png');
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#landingTitle
+{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+#portfolio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: black;
+}
+
+#contact
+{
+    display: flex;
+    flex-flow: column;
+    background: url('../images/city\ option\ 1.jpg');
+    background-size: cover;
+}
+
+#contactFormArea
+{
+    border-radius: 100px;
+}
+
+#contactHeader
+{
+    text-align: center;
+}
+
+#contactForm
+{
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    line-height: 1;
+}
+
+.submitContainer
+{
+    text-align: center;
+}
+
+.formInput
+{
+    font-size: 22px;
+    font-family: 'Pangolin', cursive;
+    background: rgba(7, 6, 10, 0.3);
+    color: white;
+}
+
+#contactSubmit
+{
+    background: darkslategray;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Pangolin', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bolder;
+}
+
+#contactSubmit:hover
+{
+    color: darkslategray;
+    background: white;
+    border: 2px solid darkslategray;
+}
+
+form .form-control::placeholder
+{
+    color: white;
+}
+
+form .form-control::-webkit-input-placeholder { 
+    color: white;
+  }
+  
+  form .form-control::-moz-placeholder {
+    color: white;
+  }
+  form .form-control:-ms-input-placeholder {
+    color: white;
+  }
+  form .form-control:placeholder {
+    color: white;
+  }
+
+

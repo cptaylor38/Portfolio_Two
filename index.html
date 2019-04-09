@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container-fluid' id='landing'>
+        <div class='container' id='landingTitle'>
+            <p id='name'>Corbin Taylor</p>
+        </div>
+        <div class='container' id='navItems'>
+            <a href='#portfolio' class='navBtn' id='portfolioBtn'>Portfolio</a>
+            <button type='button' class='navBtn' id='resumeBtn'>Resume</button>
+            <a href='#contact' class='navBtn' id='contactBtn'>Contact</a>
+        </div>
+    </div>
+
+    <div class='container-fluid' id='portfolio'>
+
+
+    </div>
+
+    <div class='container-fluid' id='contact'>
+        <div class='container' id='contactFormArea'>
+            <form id='contactForm' onsubmit='return false'>
+                <div class='container' id='navBtnsContainer'>
+                    <a href='#portfolio' class='navBtn' id='portfolioBtn'>Portfolio</a>
+                    <button type='button' class='navBtn' id='resumeBtn'>Resume</button>
+                </div>
+                <h3 id='contactHeader'>Want to get in touch?</h3>
+                <div class='form-group contactFormGroup'>
+                    <label for='nameContact'>Hello,</label>
+                    <input type='text' class='form-control formInput' id='nameContact' placeholder='Your name..'>
+                </div>
+                <div class="form-group contactFormGroup">
+                    <label for="howContact">How should I get back to you?</label>
+                    <select class="form-control formInput" id="howContact">
+                        <option>Phone</option>
+                        <option>Email</option>
+                    </select>
+                </div>
+                <div class='form-group contactFormGroup'>
+                    <label for='emailContact'>What's your email?</label>
+                    <input type='email' class='form-control formInput' id='emailContact' placeholder='your@email.com'>
+                </div>
+                <div class='form-group contactFormGroup'>
+                    <label for='phoneContact'>What's the best number to reach you at?</label>
+                    <input type='text' class='form-control formInput' id='phoneContact' placeholder='(000)111-1111'>
+                </div>
+                <div class="form-group contactFormGroup">
+                    <label for="messageContact">Like to send me a message?</label>
+                    <textarea class="form-control formInput" id="messageContact" rows="3"></textarea>
+                </div>
+                <div class='submitContainer'>
+                    <button type="submit" class="btn btn-primary" id='contactSubmit'>Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src='assets/javascript/script.js'>
+</script>
+
+</html>
