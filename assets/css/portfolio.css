@@ -1,3 +1,9 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
 #name
 {
     font-size: 80px;
@@ -39,13 +45,15 @@
 
 .container-fluid
 {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
     background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #landing
@@ -55,6 +63,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    
 }
 
 #landingTitle
@@ -66,23 +75,23 @@
 #portfolio
 {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
-    flex-wrap: nowrap;
-    background: black;
+    background: rgba(75, 28, 28, 0.918);
 }
 
 #contact
 {
     display: flex;
-    flex-flow: column;
-    background: url('../images/city\ option\ 1.jpg');
-    background-size: cover;
+    flex-flow: row wrap;
 }
 
 #contactFormArea
 {
-    border-radius: 100px;
+    background: url('../images/city\ option\ 1.jpg');
+    background-size: cover;
+    background-position: center center;
+    flex: 1;
 }
 
 #contactHeader
@@ -110,8 +119,8 @@
 {
     font-size: 22px;
     font-family: 'Pangolin', cursive;
-    background: rgba(7, 6, 10, 0.3);
-    color: white;
+    background: rgba(252, 251, 253, 0.7);
+    color: black;
 }
 
 #contactSubmit
@@ -136,21 +145,106 @@
 
 form .form-control::placeholder
 {
-    color: white;
+    color: black;
 }
 
 form .form-control::-webkit-input-placeholder { 
-    color: white;
+    color: black;
   }
   
   form .form-control::-moz-placeholder {
-    color: white;
+    color: black;
   }
   form .form-control:-ms-input-placeholder {
-    color: white;
+    color: black;
   }
   form .form-control:placeholder {
-    color: white;
+    color: black;
   }
+
+
+#aboutMe
+{
+    background: rgba(187, 75, 19, 0.849);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#selfie
+{
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+.modal-body > img
+{
+    margin: 0;
+    padding: 20px;
+}
+
+.modalContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+.modalSection
+{
+    padding: 15px;
+}
+
+.modalSection > h3
+{
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    line-height: 1;
+}
+
+#portfolioInfo
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.portfolioHeader
+{
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    line-height: 1;
+}
+
+#aboutMe > h3
+{
+    font-family: 'Pangolin', cursive;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#aboutMe > p
+{
+    color: white; 
+    font-size: 18px; 
+    background: rgba(49, 46, 46, 0.342);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+
 
 
